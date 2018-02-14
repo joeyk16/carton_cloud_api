@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20180214103413) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "deliveries", force: :cascade do |t|
     t.date     "pick_up_date"
     t.string   "name"
@@ -28,4 +31,5 @@ ActiveRecord::Schema.define(version: 20180214103413) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "deliveries", "users"
 end

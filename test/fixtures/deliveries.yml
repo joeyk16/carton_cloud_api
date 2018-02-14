@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pick_up: 2018-02-14
+  name: MyString
+  user: 
+
+two:
+  pick_up: 2018-02-14
+  name: MyString
+  user: 

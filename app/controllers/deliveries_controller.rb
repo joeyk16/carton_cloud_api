@@ -5,13 +5,13 @@ class DeliveriesController < ApplicationController
   # GET /deliveries.json
   def index
     @deliveries = Delivery.all
-    render json: @deliveries, status: :success
+    render json: @deliveries, status: :ok
   end
 
   # GET /deliveries/1
   # GET /deliveries/1.json
   def show
-    render json: @deliverie, status: :success
+    render json: @delivery, status: :ok
   end
 
   # POST /deliveries

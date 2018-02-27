@@ -1,7 +1,5 @@
-== README
-
-## Carton Cloud Api
-
-This was a quick job. In no way shape or form is this a representation of my code. I used rails generate scaffold to create the code.
+# CartonCloud API
 
 https://carton-cloud-api.herokuapp.com/
+
+This app is not a reflection of my code. It was built using rails scaffold.

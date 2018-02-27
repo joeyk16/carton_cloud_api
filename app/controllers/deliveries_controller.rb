@@ -39,10 +39,10 @@ class DeliveriesController < ApplicationController
   # DELETE /deliveries/1
   # DELETE /deliveries/1.json
   def destroy
-    @delivery.destroy
-    respond_to do |format|
-      format.html { redirect_to deliveries_url, notice: 'Delivery was successfully destroyed.' }
-      format.json { head :no_content }
+    if @delivery.destroy
+      render json: @delivery, status: :ok
+    else
+      render json: @delivery.errors, status: :unprocessable_entity
     end
   end
 
